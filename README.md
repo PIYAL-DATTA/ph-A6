@@ -68,5 +68,3 @@ https://openapi.programming-hero.com/api/words/all
 ---
 - [ ] Show ***No Word Found** message  if no words exist for a lesson
 ---
-- [ ] Create functionality to highlight the active lesson button
----
