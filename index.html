@@ -1,0 +1,227 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <!-- Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Hind Siliguri -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!--   logo   -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b5c2cc2edf.js" crossorigin="anonymous"></script>
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+        }
+
+        .siliguri {
+            font-family: "Hind Siliguri", sans-serif;
+            font-style: normal;
+        }
+
+        .inter {
+            font-family: "Inter", sans-serif;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar nav fixed-top sticky top-0 z-3 w-full"
+        style="box-sizing: border-box; border: 1px solid rgb(198, 189, 189); backdrop-filter: blur(40px); background: linear-gradient(178.08deg, rgba(255, 255, 255, 0.3) -28.101%,rgba(0, 0, 0, 0) 128.101%),linear-gradient(169.25deg, rgba(255, 255, 255, 0.05) 24.246%,rgba(0, 0, 0, 0) 24.246%);">
+        <div class="w-full flex justify-between px-[96px]">
+            <div class="flex flex-row items-center poppins font-semibold">
+                <p>English</p>
+                <img src="assets/logo.png">
+                <p>জানালা</p>
+            </div>
+            <div class="flex flex-row items-center poppins font-semibold">
+                <button onclick="faq()" class="btn btn-outline btn-primary me-[16px]">
+                    <img src="assets/fa-circle-question.png">
+                    FAQ</button>
+                <button onclick="learn()" class="btn btn-outline btn-primary me-[16px]">
+                    <img src="assets/fa-book-open.png">
+                    Learn</button>
+                <button class="btn btn-outline btn-primary">
+                    <img src="assets/fa-arrow-right-from-bracket.png">
+                    Logout
+                </button>
+                <script>
+                    function faq() {
+                        window.location.href = "#faq";
+                    }
+                    function learn() {
+                        window.location.href = "#learn";
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- Hero -->
+    <div class="px-[96px] mb-[200px]">
+        <div class="grid grid-cols-[1.5fr_1fr]">
+            <div class="flex items-center justify-start">
+                <div>
+                    <p class="poppins font-black text-5xl"><span class="text-sky-300">English</span> is Easy!!</p>
+
+                    <br>
+                    <p class="w-[727px] text-2xl font-medium siliguri">
+                        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান,
+                        আমাদের
+                        Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
+                    </p>
+                    <br>
+                    <div>
+                        <input type="text" placeholder="Enter Your Name" class="input" />
+                    </div>
+                    <br>
+                    <div>
+                        <input type="password" placeholder="Password" class="input" />
+                    </div>
+                    <br>
+                    <div>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <img src="assets/hero-student.png">
+            </div>
+        </div>
+    </div>
+    <!-- Lesson -->
+    <div id="learn" class="px-[96px] mb-[200px]">
+        <p class="text-center poppins text-[36px] font-bold"><span class="text-sky-300">Let's</span> Learn Vocabularies
+        </p>
+        <div id="lessons" class="mt-[35px] flex items-center justify-center">
+        </div>
+        <div id="lesson_list" class="mt-[40px] card p-[30px]"
+            style="border-radius: 24px; background: rgb(248, 248, 248);">
+            <div class="w-full h-[200px] flex flex-col items-center justify-center">
+                <p class="siliguri text-[14px] font-normal mb-[12px]">আপনি এখনো কোন Lesson Select করেন নি</p>
+                <p class="siliguri text-[35px] font-medium">একটি Lesson Select করুন।</p>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ -->
+    <div id="faq" class="px-[96px] mb-[200px]">
+        <div class="text-center mb-[80px]">
+            <p class="poppins text-[36px] font-bold"><span class="text-sky-300">Frequently</span> Asked Questions</p>
+        </div>
+        <div class="collapse collapse-plus rounded-[16px] bg-[#f8f8f8] mb-[20px]">
+            <input type="radio" name="my-accordion-3" checked="checked" />
+            <div class="collapse-title font-semibold poppins text-[16px]">1. The difference between var, let, and const
+            </div>
+            <div class="collapse-content text-[16px] font-normal text-[#62748E]">
+                'var' is function-scoped and hoisted (can be redeclared and reassigned)
+                <br>
+                'let' is block-scoped (can be reassigned but not redeclared)
+                <br>
+                'const' is block-scoped (cannot be reassigned or redeclared).
+            </div>
+        </div>
+        <div class="collapse collapse-plus rounded-[16px] bg-[#f8f8f8] mb-[20px]">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold poppins text-[16px]">2. The difference between map(), forEach(),
+                and filter()</div>
+            <div class="collapse-content text-[16px] font-normal text-[#62748E]">
+                map(): Transforms each item in an array and returns a new array with the transformed values.
+                <br>
+                forEach(): Executes a function on each array item but does not return anything.
+                <br>
+                filter(): Returns a new array containing only the items that pass a condition.
+            </div>
+        </div>
+        <div class="collapse collapse-plus rounded-[16px] bg-[#f8f8f8] mb-[20px]">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold poppins text-[16px]">3. Explain arrow functions and how they are
+                different from regular functions</div>
+            <div class="collapse-content text-[16px] font-normal text-[#62748E]">
+                Arrow functions in JavaScript are a concise way to write functions using the `=>` syntax, introduced in
+                ES6. Unlike regular functions, arrow functions do not have their own `this` context; instead, they
+                inherit `this` from their enclosing scope, making them useful for callbacks and situations where you
+                want to preserve the outer `this`. They also cannot be used as constructors and do not have access to
+                the `arguments` object. While arrow functions offer a cleaner, shorter syntax, regular functions are
+                more suitable when you need dynamic `this` binding or are creating object methods or constructors.
+            </div>
+        </div>
+        <div class="collapse collapse-plus rounded-[16px] bg-[#f8f8f8] mb-[20px]">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold poppins text-[16px]">4. How JavaScript Promises work?</div>
+            <div class="collapse-content text-[16px] font-normal text-[#62748E]">
+                JavaScript Promises represent the eventual completion (or failure) of an asynchronous operation and its
+                resulting value. A Promise is an object that can be in one of three states: **pending**, **fulfilled**,
+                or **rejected**. When a Promise is created, it starts in the pending state and moves to fulfilled with a
+                value when the operation succeeds, or to rejected with a reason (error) if it fails. You handle the
+                result using `.then()` for success, `.catch()` for errors, and optionally `.finally()` for cleanup.
+                Promises help write cleaner, more manageable async code compared to deeply nested callbacks (callback
+                hell).
+            </div>
+        </div>
+        <div class="collapse collapse-plus rounded-[16px] bg-[#f8f8f8] mb-[20px]">
+            <input type="radio" name="my-accordion-3" />
+            <div class="collapse-title font-semibold poppins text-[16px]">5. How closures work in JavaScript?</div>
+            <div class="collapse-content text-[16px] font-normal text-[#62748E]">
+                Closures in JavaScript occur when a function **remembers and accesses variables from its lexical (outer)
+                scope**, even after that outer function has finished executing. This means an inner function retains
+                access to the variables of its parent function, allowing those variables to persist in memory. Closures
+                are created every time a function is defined inside another function and used outside its scope. They
+                are commonly used for data privacy, creating function factories, and maintaining state across function
+                calls without using global variables.
+            </div>
+        </div>
+    </div>
+<!-- Footer -->
+ <div class="p-[96px] h-[325px]">
+    <div class="grid grid-cols-2 h-full">
+        <div class="flex flex-col justify-center">
+
+                <div class="flex flex-row items-center poppins font-semibold  mb-[20px]">
+                    <p>English</p>
+                    <img src="assets/logo.png">
+                    <p>জানালা</p>
+                </div>
+            <div class="mb-[10px] text-[20px] siliguri font-medium">ইংরেজি শিখুন সহজে</div>
+            <div class="text-[16px] siliguri font-normal">Providing ED-Tech Applications since 2025</div>
+        </div>
+        <div class="flex flex-row items-end justify-end">
+            <div>
+                <div class="font-semibold text-[14px] pb-[15px]">FOLLOW US</div>
+                <div class="flex flex-row gap-[16px]">
+                    <img src="assets/fb-thumb.png" class="w-[28px] h-[28px]">
+                    <img src="assets/youtube-thumb.png" class="w-[28px] h-[28px]">
+                    <img src="assets/instagram-thumb.png" class="w-[28px] h-[28px]">
+                    <img src="assets/github-thumb.png" class="w-[28px] h-[28px]">
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
